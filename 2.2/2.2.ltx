@@ -1,0 +1,18 @@
+MAX 70 CA + 70 EA + 70 ZA + 60 EB + 60 MB + 60 ZB 
+	- 10 YSA - 40 YSC - 50 YEA
+ST
+COB) 0.2 YSA + 0.1 YSC + 0.05 YEA - CA >= 0
+EST) 0.1 YSA + 0.2 YSC + 0.05 YEA - EA - EB >= 0
+MNG) 0.3 YSA + 0.3 YSC + 0.7 YEA - MB >= 0
+ZNC) 0.3 YSA + 0.3 YSC + 0.2 YEA - ZA - ZB >= 0
+A_COB) - 0.2 CA + 0.8 EA + 0.8 ZA >= 0
+A_EST) 0.3 CA - 0.7 EA + 0.3 ZA >= 0
+A_ZNC) 0.5 CA + 0.5 EA - 0.5 ZA <= 0
+B_EST_1) - 0.6 EB + 0.4 MB + 0.4 ZB <= 0
+B_EST_2) - 0.4 EB + 0.6 MB + 0.6 ZB >= 0
+B_MNG) 0.3 EB - 0.7 MB + 0.3 ZB <= 0
+B_ZNC) 0.7 EB + 0.7 MB - 0.3 ZB >= 0
+MAX_YSA) YSA <= 1000
+MAX_YSC) YSC <= 2000
+MAX_YEA) YEA <= 3000
+END
