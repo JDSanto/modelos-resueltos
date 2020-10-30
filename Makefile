@@ -1,14 +1,21 @@
 ASSETS_FOLDER := assets
 
-all:
-	cd $(EJ) && pandoc --template="../$(ASSETS_FOLDER)/eisvogel.tex" "$(EJ).md" -o "$(EJ).pdf"
+make:
+	envsubst < $(ASSETS_FOLDER)/header.md > $(EJ)/$(EJ).md.header
+	cd $(EJ) && cat $(EJ).md.header "$(EJ).md" | pandoc --template="../$(ASSETS_FOLDER)/eisvogel.tex" --listings -o "$(EJ).pdf"
+	rm $(EJ)/$(EJ).md.header
 
 latex:
-	cd $(EJ) && pandoc --template="../$(ASSETS_FOLDER)/eisvogel.tex" "$(EJ).md" -o "$(EJ).tex"
+	envsubst < $(ASSETS_FOLDER)/header.md > $(EJ)/$(EJ).md.header
+	cd $(EJ) && cat $(EJ).md.header "$(EJ).md" | pandoc --template="../$(ASSETS_FOLDER)/eisvogel.tex" --listings -o "$(EJ).pdf"
+	rm $(EJ)/$(EJ).md.header
+
+all:
+	cd $(ASSETS_FOLDER) && bash all.sh
 
 new:
 	mkdir $(EJ)
-	ASSETS_FOLDER=$(ASSETS_FOLDER) envsubst < $(ASSETS_FOLDER)/template.md > $(EJ)/$(EJ).md
+	cat $(ASSETS_FOLDER)/template.md > $(EJ)/$(EJ).md
 
 book:
-	
+	cd $(ASSETS_FOLDER) && bash merge.sh

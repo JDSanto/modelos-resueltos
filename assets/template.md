@@ -1,17 +1,3 @@
----
-title: Ejercicio ${EJ}
-subtitle: Modelos y Optimización I
-author: Di Santo, Javier - 101696
-date: Segundo cuatrimestre 2020
-toc: true
-toc-title: Índice
-titlepage: true
-titlepage-background: "../${ASSETS_FOLDER}/background10.pdf"
-logo: "../${ASSETS_FOLDER}/fiuba.png"
-logo-width: 150
-toc-own-page: true
----
-
 # 1. Enunciado
 
 
