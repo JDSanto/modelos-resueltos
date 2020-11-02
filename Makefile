@@ -7,7 +7,7 @@ make:
 
 latex:
 	envsubst < $(ASSETS_FOLDER)/header.md > $(EJ)/$(EJ).md.header
-	cd $(EJ) && cat $(EJ).md.header "$(EJ).md" | pandoc --template="../$(ASSETS_FOLDER)/eisvogel.tex" --listings -o "$(EJ).pdf"
+	cd $(EJ) && cat $(EJ).md.header "$(EJ).md" | pandoc --template="../$(ASSETS_FOLDER)/eisvogel.tex" --listings -o "$(EJ).latex"
 	rm $(EJ)/$(EJ).md.header
 
 all:
