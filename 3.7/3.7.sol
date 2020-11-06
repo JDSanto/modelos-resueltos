@@ -1,7 +1,7 @@
 Problem:    3
 Rows:       39
 Columns:    29 (9 integer, 9 binary)
-Non-zeros:  94
+Non-zeros:  93
 Status:     INTEGER OPTIMAL
 Objective:  z = 265650 (MAXimum)
 
@@ -56,9 +56,9 @@ Objective:  z = 265650 (MAXimum)
     26 MAX_VENTAS_B             3000                        3000 
     27 MAX_VENTAS_C             4000                        4000 
     28 CONDICIONAL_VENTAS_A_1
-                             -101000                          -0 
+                             -101000                     -0.0001 
     29 CONDICIONAL_VENTAS_A_2
-                             -102000                          -0 
+                              -98000                          -0 
     30 STOCK_INICIAL_A
                                   50            50             = 
     31 STOCK_INICIAL_B
@@ -117,8 +117,8 @@ KKT.PE: max.abs.err = 0.00e+00 on row 0
         max.rel.err = 0.00e+00 on row 0
         High quality
 
-KKT.PB: max.abs.err = 1.71e-13 on row 3
-        max.rel.err = 1.71e-13 on row 3
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
         High quality
 
 End of output

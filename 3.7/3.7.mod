@@ -52,7 +52,6 @@ var I_B_MENOR, binary;
 
 /* Restricciones */
 
-
 s.t. INTERVALO_VA_1_MIN: 0 <= V_A_1;
 s.t. INTERVALO_VA_1_MAX: V_A_1 <= (500 - m) * I_A_1;
 s.t. INTERVALO_VA_2_MIN: 500 * I_A_2 <= V_A_2;
@@ -71,14 +70,12 @@ s.t. INTERVALO_CC_3_MAX: C_C_3 <= M * I_C_3;
 s.t. INTERVALO_UNICO_CC: I_C_1 + I_C_2 + I_C_3 = 1;
 s.t. SUMA_C_C: C_C = C_C_1 + C_C_2 + C_C_3;
 
-
 s.t. INTERVALO_C_2500_MIN: (2500 + m) * I_C_B_2 <= C_C;
 s.t. INTERVALO_C_2500_MAX: C_C <= I_C_B_1 * 2500 + I_C_B_2 * M;
 s.t. INTERVALO_UNICO_CB: I_C_B_1 + I_C_B_2 = 1;
 s.t. INTERVALO_CB_1_MAX: C_C_B_1 <= M * I_C_B_1;
 s.t. INTERVALO_CB_2_MAX: C_C_B_2 <= M * I_C_B_2;
 s.t. SUMA_C_B: C_B = C_C_B_1 + C_C_B_2;
-
 
 s.t. B_MENOR_C_MIN: - M * I_B_MENOR <= V_B - V_C;
 s.t. B_MENOR_C_MAX: V_B - V_C <= M * (1 - I_B_MENOR);
@@ -87,8 +84,8 @@ s.t. MAX_VENTAS_A: V_A <= 2000;
 s.t. MAX_VENTAS_B: V_B <= 3000;
 s.t. MAX_VENTAS_C: V_C <= 4000;
 
-s.t. CONDICIONAL_VENTAS_A_1: V_A <= V_B + I_B_MENOR * M;
-s.t. CONDICIONAL_VENTAS_A_2: V_A <= V_C + I_B_MENOR * M;
+s.t. CONDICIONAL_VENTAS_A_1: V_A <= (V_B - m) + I_B_MENOR * M;
+s.t. CONDICIONAL_VENTAS_A_2: V_A <= I_B_MENOR * M;
 
 s.t. STOCK_INICIAL_A: V_A = C_A + 50;
 s.t. STOCK_INICIAL_B: V_B = C_B + 100;
