@@ -1,2 +1,3 @@
 *.pdf
 !assets/background10.pdf
+.vscode
