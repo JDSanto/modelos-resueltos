@@ -16,7 +16,7 @@ footer-left: "Segundo cuatrimestre 2020"
 code-block-font-size: \scriptsize
 highlighting-macros: ""
 ---
-
+<!--
 # Prefacio
 
 Este es todo el conjunto de ejercicios que resolví para la materia Modelos y Optimización I.
@@ -29,4 +29,4 @@ Por si hay algo que quieras agregar, el link al respositorio es <https://github.
 
 Está lindo el template, ¿no? Fue el primero que apareció cuando busqué `"pandoc latex template"`. Se llama _Eisvogel_ y acá está su repositorio: <https://github.com/Wandmalfarbe/pandoc-latex-template>
 
-\pagebreak
+\pagebreak-->
