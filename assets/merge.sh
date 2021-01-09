@@ -20,7 +20,7 @@ printf '%s\0' */ | sort -zV | while read -rd '' d; do
     cat "${d}.md" > "${d_aux}"
     sed -i "s/^#/##/" "${d_aux}" # Bajar todos los niveles de headers por uno
     sed -i "1i# ${d}" "${d_aux}"  # Agregar header de ejercicio
-    sed -i "s/\[\](/\[\](${d}\//" "${d_aux}"  # Cambiar ruta relativa de las imagenes
+    sed -i "s/\[\(.*\)\](/\[\1\](${d}\//" "${d_aux}"  # Cambiar ruta relativa de las imagenes
 
     # Si existe el archivo de correcciones, agregarlo como quote
     if [ -f "$d-correcciones.md" ]; then

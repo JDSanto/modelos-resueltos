@@ -11,5 +11,8 @@ logo: "../assets/fiuba.png"
 logo-width: 150
 toc-own-page: true
 code-block-font-size: \scriptsize
+header-includes:
+- \usepackage{caption}
+- \captionsetup[figure]{labelformat=empty}
 ---
 

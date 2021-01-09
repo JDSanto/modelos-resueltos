@@ -15,6 +15,9 @@ header-right: "\\leftmark"
 footer-left: "Segundo cuatrimestre 2020"
 code-block-font-size: \scriptsize
 highlighting-macros: ""
+header-includes:
+- \usepackage{caption}
+- \captionsetup[figure]{labelformat=empty}
 ---
 <!--
 # Prefacio
