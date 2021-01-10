@@ -18,6 +18,7 @@ highlighting-macros: ""
 header-includes:
 - \usepackage{caption}
 - \captionsetup[figure]{labelformat=empty}
+- \usepackage{calc,array}
 ---
 <!--
 # Prefacio

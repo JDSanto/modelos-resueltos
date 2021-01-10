@@ -14,5 +14,6 @@ code-block-font-size: \scriptsize
 header-includes:
 - \usepackage{caption}
 - \captionsetup[figure]{labelformat=empty}
+- \usepackage{calc,array}
 ---
 
