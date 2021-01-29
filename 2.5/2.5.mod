@@ -1,0 +1,23 @@
+param R := 10;
+param L := 4;
+param K := 3;
+param M := 6;
+
+var M_RAPIDA_SNOOPY >= 0, integer;
+var M_RAPIDA_SCOOBY >= 0, integer;
+var M_LENTA_SNOOPY >= 0, integer;
+var M_LENTA_SCOOBY >= 0, integer;
+
+var P_SNOOPY >= 0;
+var P_SCOOBY >= 0;
+
+s.t. MAX_RAPIDAS: M_RAPIDA_SNOOPY + M_RAPIDA_SCOOBY <= 70;
+s.t. MAX_LENTAS: M_LENTA_SNOOPY + M_LENTA_SCOOBY <= 60;
+
+s.t. VINCULACION_SNOOPY: P_SNOOPY = (R * M_RAPIDA_SNOOPY + 2 * M_LENTA_SNOOPY) * 8;
+s.t. VINCULACION_SCOOBY: P_SCOOBY = (7 * M_RAPIDA_SCOOBY + L * M_LENTA_SCOOBY) * 8;
+
+s.t. DEMANDA_MINIMA_SNOOPY: 10000 <= P_SNOOPY;
+s.t. DEMANDA_MINIMA_SCOOBY: 9000 <= P_SCOOBY;
+
+maximize z: K * P_SNOOPY + M * P_SCOOBY;
