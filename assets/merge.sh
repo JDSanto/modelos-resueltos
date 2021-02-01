@@ -14,6 +14,11 @@ printf '%s\0' */ | sort -zV | while read -rd '' d; do
     if [[ "$d" == "assets/" ]]; then
         continue
     fi
+
+    if [[ "$d" == *"skip/" ]]; then
+        continue
+    fi
+
     d=${d::-1}
     d_aux="${d}.aux.md"
     cd "$d"
