@@ -1,0 +1,6 @@
+MAX 4 X1 + 3 X2 + 2 X3
+ST
+MAT_PRIM) 1 X1 + 2 X2 + 1 X3  <=  10
+H_MAQ) 4 X1 + 2 X2 + 2 X3  <=  20
+MIN_X2) X2 >= 2
+END
