@@ -439,3 +439,31 @@ c. ...el resultado da siempre que todos los objetos entran en la mochila
 a. **...es el primer elemento que no entra en la mochila**
 b. ...es el siguiente elemento después del primero que no entra
 c. ...es el último elemento que entra
+
+
+# 16. Semana 16 - Complejidad
+
+## 16.1
+
+> Se dice que un problema es de "clase P" respecto a su complejidad...
+
+a. ...cuando algunas instancias se pueden resolver en tiempo polinómico
+b. **...cuando existe un algoritmo de clase P que lo resuelve** Correcto
+c. ...cuando se necesita una máquina de Turing NO determinística para resolverlo
+
+## 16.2
+
+> La complejidad se puede definir como la relación...
+
+a. ...entre el tiempo que se tarda en resolver el problema y el tiempo promedio de resolución de ese tipo de problemas
+b. **...entre la cantidad de instrucciones computadas y el tamaño de la instancia**
+c. ...entre la cantidad de variables del problema y la cantidad de restricciones del mismo
+
+## 16.3
+
+> Un problema B "NO es más fácil" que un problema A...
+
+a. ...si A es igual a B
+b. ...si A puede "convertirse" en B en un tiempo NO polinomial
+c. **...si A puede "convertirse" en B en tiempo polinomial**
+
