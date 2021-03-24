@@ -1,7 +1,6 @@
 ---
 title: Ejercicios resueltos
 subtitle: Modelos y Optimización I
-author: Di Santo, Javier - 101696
 date: Segundo cuatrimestre 2020
 toc: true
 toc-title: Índice
