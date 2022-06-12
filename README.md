@@ -2,6 +2,8 @@
 
 Conjunto de ejercicios resueltos de la materia Modelos y Optimización I.
 
+[Link para descargar el último PDF generado con todos los ejercicios.](https://github.com/JDSanto/modelos-resueltos/releases/download/v1.0/ModelosI-Resueltos.pdf)
+
 ## Generar los PDFs
 
 Para generar los PDFs, es necesario instalar:
